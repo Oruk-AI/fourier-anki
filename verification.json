@@ -1,0 +1,55 @@
+{
+  "model": "oruk/oruk-fourier-2b",
+  "revision": "3fda023e157ce7986f137f76fcf326ed6e08fa73",
+  "folder": "onnx/sherpa-int8",
+  "verified_model_files": 10,
+  "model_bytes": 2409908809,
+  "qa_job": "https://huggingface.co/jobs/oruk/6b02dd78130a00b5aa802ad3",
+  "job_status": "COMPLETED",
+  "collection_test": {
+    "anki": "26.09.4",
+    "selected_notes": 1,
+    "field": "Back",
+    "file": "sample clip.wav",
+    "source_preserved": true,
+    "other_note_preserved": true,
+    "scheduling_preserved": true,
+    "undo_restored_empty_field": true,
+    "media_unchanged": true,
+    "selected_audio_sha256": "59dfb9a4acb36fe2a2affc14bacbee2920ff435cb13cc314a08c13f66ba7860e",
+    "normalized_words": 22,
+    "word_errors": 0,
+    "accepted_preview": "And so, my fellow Americans, ask not what your country can do for you. Ask what you can do for your country.",
+    "refused_nonempty_field": true,
+    "refused_changed_file_hash": true,
+    "refused_same_field": true,
+    "refused_changed_destination": true,
+    "html_escaped": true
+  },
+  "package_sha256": "4e1a6297f04e89b52edde2ccfcc90737169a18f7698aedb4128394965f9898a4",
+  "fixture": "https://github.com/ggml-org/whisper.cpp/blob/b0a11594aec50892a02cd8d129eee2dfe93a8bb8/samples/jfk.wav",
+  "previous_prelicense_job": "https://huggingface.co/jobs/oruk/6b02c5aaefaf5e14f4b86900",
+  "package_bytes": 16307,
+  "license": {
+    "addon_and_optional_provider": "AGPL-3.0-or-later",
+    "model": "CC-BY-NC-4.0",
+    "license_source": "https://www.gnu.org/licenses/agpl-3.0.txt"
+  },
+  "archive_files": [
+    "manifest.json",
+    "__init__.py",
+    "core.py",
+    "recognize.py",
+    "LICENSE"
+  ],
+  "release_validation": {
+    "reproducible_archive": true,
+    "full_weights_tested_with_release_archive": true,
+    "python_byte_diff_from_prelicense_archive": "only two leading comment lines in each of three Python files; parsed AST identical",
+    "qt_host": "Anki 26.09.4 (macOS, offscreen), real add-on manager, notes menu, browser, and collection; simulated input dialogs and fixed transcription helper",
+    "native_note_menu_selection_preview_commit_undo": true,
+    "third_party_release": "https://github.com/abdnh/anki-asr/releases/tag/1.1.1",
+    "third_party_real_registry_picker_and_second_read_from_cache": true,
+    "platforms": "Real Fourier inference on Linux CPU; macOS app and provider GUI with fixed local helper. Windows not tested."
+  }
+}
