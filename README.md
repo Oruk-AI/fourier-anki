@@ -16,10 +16,10 @@ Select a note with an English recording, review the transcript and save it in an
    user_files/venv/bin/python -m pip install 'sherpa-onnx==2.0.2' 'numpy==2.2.6' huggingface_hub
    user_files/venv/bin/hf download oruk/oruk-fourier-2b \
      --revision 3fda023e157ce7986f137f76fcf326ed6e08fa73 \
-     --include 'onnx/sherpa-int8/*' --local-dir user_files/model
+     --include 'onnx/sherpa-int8/*' --include config.json --local-dir user_files/model
    ```
 
-   The ten model files take 2.41 GB on disk. Keep the `.onnx.data` files beside their `.onnx` files. If you already have this exact model, start Anki with `FOURIER_MODEL_DIR` set to its `sherpa-int8` folder to reuse it. To use an existing compatible Python runtime, set `FOURIER_PYTHON` to that interpreter’s absolute path.
+   The ten `onnx/sherpa-int8/` model files plus repo-root `config.json` take 2.41 GB on disk (including `config.json` preserves model metadata and standard Hugging Face download accounting). Keep the `.onnx.data` files beside their `.onnx` files. If you already have this exact model, start Anki with `FOURIER_MODEL_DIR` set to its `sherpa-int8` folder to reuse it. To use an existing compatible Python runtime, set `FOURIER_PYTHON` to that interpreter’s absolute path.
 
 If Anki cannot find FFmpeg on macOS, quit Anki and launch from a terminal where `ffmpeg -version` works:
 
